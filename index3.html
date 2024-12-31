@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        @keyframes Colour {
+            0% {background-color: red;}
+            25% {background-color: blue;}
+            30% {background-color: purple;}
+            35% {background-color: yellow;}
+            80% {background-color: darkgreen;}
+            100% {background-color: rgba(255, 0, 191, 0.79);}
+        
+        }
+        #animation1{
+            width : 200px;
+            height : 100px;
+            animation-name: Colour;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        #animation2{
+            width : 300px;
+            height : 100px;
+            animation-name: Colour2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Colour2{
+            from {background-color: black;}
+            to {background-color: white;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div id = "animation2" style = "padding-top : 50px ; padding-left:100px;">
+    Hello world
+    </div>
+    <br>
+    <br>
+    <div id = "animation1" style="padding-top : 50px ; padding-left:100px;">
+        
+    </div>
+</body>
+</html>
